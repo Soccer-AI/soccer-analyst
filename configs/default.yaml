@@ -1,0 +1,42 @@
+#--------------------------------------------------------------------------------------------
+# Tracking Parameters.
+#--------------------------------------------------------------------------------------------
+experiment_name: ~
+# model name
+name: ~  
+# path to images or video
+path: "./videos/palace.mp4"
+# whether to save the inference result of image/video
+save_result: True
+# pls input your expriment description file
+exp_file: ~
+# ckpt for eval
+ckpt: ~
+# device to run our model, can either be cpu or gpu
+device: "cuda"
+# test conf
+conf: ~
+# test nms threshold
+nms: ~
+# test img size
+tsize: ~
+# frame rate (fps)
+fps: 30
+# adopting mix precision evaluating
+fp16: False
+# fuse conv and bn for testing
+fuse: False
+# using TensorRT model for testing
+trt: False
+# tracking confidence threshold
+track_thresh: 0.5
+# the frames for keep lost tracks
+track_buffer: 30
+# matching threshold for tracking
+match_thresh: 0.8
+# threshold for filtering out boxes of which aspect ratio are above the given value
+aspect_ratio_thresh: 1.6
+# filter out tiny boxes
+min_box_area: 10
+# test mot20
+mot20: False
